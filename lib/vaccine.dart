@@ -1,15 +1,15 @@
 class Vaccine {
   final int id;
   final String name;
-  final int ageMin; // Updated to ageMin for clarity
-  final int ageMax; // Updated to ageMax for clarity
+  final int ageMin;
+  final int ageMax;
 
 
   Vaccine({
     this.id = 0,
     required this.name,
-    required this.ageMin, // Updated to ageMin
-    required this.ageMax, // Updated to ageMax
+    required this.ageMin,
+    required this.ageMax,
   });
 
   static Vaccine fromMap(Map<String, dynamic> map) => Vaccine(

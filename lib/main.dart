@@ -49,9 +49,20 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xFF1ae0ed),
-        title: const Text(
-          'Saúde em Foco',
-          style: TextStyle(fontSize: 26, color: Colors.black), 
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              'assets/caduceus.jpg',
+              width: 50.0,
+              height: 50.0,
+            ),
+            const SizedBox(width: 10.0),
+            const Text(
+              'Saúde em Foco',
+              style: TextStyle(fontSize: 26, color: Colors.black), 
+            ),
+          ],
         ),
         centerTitle: true,
       ),
